@@ -1,36 +1,14 @@
-import AppName from "./components/AppName";
-import AppTodo from "./components/AppTodo";
-import TodoItems from "./components/Todoitemse";
-
-
+import Home from "./components/Home.jsx";
+import { Route,Routes } from "react-router-dom";
 import "./App.css";
-function App(){ 
 
-  const todoItems=[ 
-    { 
-      name:"Buy Milk ",
-      dueDate: "2024/05/13",
-    },
-    { 
-      name:"Buy Milk ",
-      dueDate: "2024/05/13",
-    },
-    { 
-      name:"why not me ",
-      dueDate: "Right now",
-    },
-  ];
-
-  return ( 
-  <center className='todo-continar'>
-    <AppName/>
-    <AppTodo/>
-    <TodoItems todoItems={todoItems}> </TodoItems>
+const App = ()=>{ 
+  return (
+    <Routes>
+      <Route path = "" element={<Home/>}/>
+    </Routes>
     
-    
-    </center>
-
-  );
+  )
 }
 
 export default App;
