@@ -12,7 +12,7 @@ const Navigation = ()=>{
                 
             </nav>
         <SearchBar/>
-        <span className={`${classess['material-symbols-outlined']}`}>shopping_bag</span>
+        <span className={` ${classess.flex} ${classess['material-symbols-outlined']} ${classess['nav-icon-left']}`}>shopping_bag</span>
         </header>
     )
 }
