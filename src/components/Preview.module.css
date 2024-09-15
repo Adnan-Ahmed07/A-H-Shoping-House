@@ -1,0 +1,23 @@
+.preview-width{
+    width:100%;
+    /* border: 1px solid red; */
+    height: 400px;
+}
+.preview-separate{
+    margin-top:0px;
+}
+.preview-color-men{
+    background-color: rgba(22, 119, 70, 0.776);
+}
+.preview-color-women{
+    background-color: rgba(215, 79, 217, 0.776);
+}
+.flex{
+    display: flex;
+}
+.flex-align-center{
+    align-items: center;
+}
+.flex-justify-left{
+    justify-content: flex-end;
+}
