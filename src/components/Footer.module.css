@@ -10,17 +10,29 @@
     display:flex;
 }
 .flex-center{
+    flex-direction: column;
     align-items: center;
 }
 .footer-size a{
     color:white;
     text-decoration: none;
 }
+.flex-center-hor{
+    align-items: center;
+}
 .pos-end{
     align-self: flex-end;
     width: 100%;
     bottom: 0px;
 }
-.pos-end a{
+.flex a{
     align-self: center;
+}
+.flex p{
+    color: rgb(133, 128, 128);
+    align-self: center;
+}
+.margin-auto{
+    margin-left: auto;
+    margin-right: auto;
 }

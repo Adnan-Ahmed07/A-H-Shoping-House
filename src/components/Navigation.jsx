@@ -4,13 +4,7 @@ import classess from "./navigation.module.css";
 import SearchBar from "./SearchBar.jsx";
 const Navigation = () => {
   const styl = `${classess["nav-bottom"]} ${classess.flex} ${classess["flex-center"]}`;
-  const [isHover, setHover] = useState(false);
-  const mouseLeaveHandler = () => {
-    setHover(false);
-  };
-  const mouseEnterHandler = () => {
-    setHover(true);
-  };
+
   const categories = ["Men", "Women"];
 
   // State to keep track of the selected category
@@ -20,6 +14,7 @@ const Navigation = () => {
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
   };
+  
   return (
     <header className={styl}>
       <img src="/Adnan's.png" className={classess["nav-img"]} />
