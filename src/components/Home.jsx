@@ -3,7 +3,7 @@ import {Splide,SplideSlide,SplideTrack} from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
 import Preview from './Preview.jsx'
 import { useState,useEffect } from 'react'
-
+import Footer from './Footer.jsx'
 
 
 const Home = ()=>{
@@ -38,6 +38,7 @@ const Home = ()=>{
             </Splide>
             <Preview category = {men}/>
             <Preview category = {women}/>
+            <Footer/>
             </>
     )
 }

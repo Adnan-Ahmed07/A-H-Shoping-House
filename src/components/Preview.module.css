@@ -1,7 +1,8 @@
 .preview-width{
     width:100%;
     /* border: 1px solid red; */
-    height: 400px;
+    /* height: 400px; */
+    padding: 10px;
 }
 .preview-separate{
     margin-top:0px;
@@ -15,9 +16,29 @@
 .flex{
     display: flex;
 }
-.flex-align-center{
+.flex-center{
     align-items: center;
 }
-.flex-justify-left{
-    justify-content: flex-end;
+.flex-justify-right{
+    flex-direction: row-reverse;
+}
+.flex-justify-center{
+    justify-content: center;
+}
+.preview-box{
+    
+    width: 98%;
+    height: 95%;
+    overflow: hidden;
+    color: white;
+    
+}
+.preview-box-border-men{
+    border: 5px solid rgb(161, 232, 161);
+}
+.preview-box-border-women{
+    border: 5px solid rgb(240, 160, 222);
+}
+.preview-text-margin{
+    margin-left:10px;
 }

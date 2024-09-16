@@ -96,25 +96,36 @@
     color: rgba(145, 50, 50, 1);
   }
   .box-position{
-    border: 1px solid red;
-    position:relative;
-    left:-106px;
-    top:42px;
+    /* border: 1px solid red; */
+    border: 1px solid   rgb(193, 183, 183);;
+    position:absolute;
+  
+    top:34px;
     background-color: whitesmoke;
     z-index: 10;
-    display: none;
-  }
-  .box-position:hover{
-    display: initial;
+    display: inline;
   }
   
   .box-position ul{
     list-style-type: none;
-    padding-left: 10px;
-    padding-right: 1rem;
     font-weight: 500;
+    margin: 0;
+    padding-right: 10px;
+    padding-left:4px;
+    
     
   }
-  .nav-category-modal-width{
-    /* width:50px; */
+  .hidden{
+    display: none;
+  }
+  .nav-margin-top{
+    margin-top: 10px;
+    display: none;
+  }
+  .box-position-absolute{
+    position: absolute;
+    left:150px;
+  }
+  .search-margin-left-full{
+    max-width: 500px;
   }
