@@ -13,3 +13,12 @@
 .category-filter-size{
     width:15%;
 }
+.flex-center{
+    align-items: center;
+}
+.margin-top{
+    margin-top: 10px;
+}
+.margin-left{
+    margin-left:10px;
+}

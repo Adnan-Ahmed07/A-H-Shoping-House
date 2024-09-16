@@ -16,3 +16,11 @@
     color:white;
     text-decoration: none;
 }
+.pos-end{
+    align-self: flex-end;
+    width: 100%;
+    bottom: 0px;
+}
+.pos-end a{
+    align-self: center;
+}

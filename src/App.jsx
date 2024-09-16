@@ -8,7 +8,7 @@ const App = ()=>{
   return (
     <Routes>
       <Route path = "" element={<Home/>}/>
-      <Route path="/category" element = {<Category/>}/>
+      <Route path="/category" element = {<Category url = 'http://localhost:8000/category'/>}/>
       <Route path="/men" element = {<Men/>}/>
       <Route path="/women" element = {<Women/>}/>
     </Routes>

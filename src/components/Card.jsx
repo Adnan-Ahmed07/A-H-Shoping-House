@@ -8,6 +8,7 @@ const Card = (props)=>{
         <h3>{props.product.product_name}</h3>
         <p>৳{props.product.product_price}</p>
         </div>
+        <button className={`${cls['button-bg-color']} ${cls['button-size']}`}>Add to bag</button>
 
     </div>
     )

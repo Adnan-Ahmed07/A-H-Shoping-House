@@ -10,6 +10,7 @@
 .container:hover{
     transform: scale(1.05); /* Slightly increase the card size */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow to give depth */
+    cursor: pointer;
 }
 .card-img{
     width: 100%;
@@ -37,4 +38,12 @@
     flex-direction: column;
     align-items: center;
   }
-  
+  .button-bg-color{
+    background-color: rgb(52, 192, 52);
+    color: white;
+  }
+  .button-size{
+    width:95%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }

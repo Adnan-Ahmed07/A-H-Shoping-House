@@ -1,3 +1,9 @@
 .bg--color{
     background-color: whitesmoke;
 }
+html{
+    height: 100vh;
+}
+.flex{
+    display: flex;
+}
