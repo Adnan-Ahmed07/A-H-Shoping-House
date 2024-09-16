@@ -129,3 +129,13 @@
   .search-margin-left-full{
     max-width: 500px;
   }
+  .nav-modal .hidden{
+      display: none;
+    }
+    .nav-modal:hover{
+
+      height:47px;
+    }
+    .nav-modal:hover .hidden{
+    display: inherit;
+  }
