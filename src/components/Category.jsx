@@ -14,7 +14,7 @@ const Category = (props)=>{
             setCategory(data)
  
          })
-    })
+    },[props.url])
     useEffect(()=>{
         fetchData();
     },[fetchData])
