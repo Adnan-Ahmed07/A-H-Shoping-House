@@ -3,16 +3,24 @@ import Footer from "./Footer"
 import Navigation from "./Navigation"
 import Card from "./Card";
 import cls from './Category.module.css'
+import Errorr from "./Errorr";
+import { Link } from "react-router-dom";
 
 const Category = (props)=>{
     const [category,setCategory] = useState([]);
     const [changeValue, setValue] = useState(0);
+    const[isFetched,setFetch]=useState(true)
     const fetchData = useCallback(()=>{
 
          fetch(props.url).then(res=>res.json()).then(data=>{
-            
+            setFetch(true)
             setCategory(data)
  
+         }).catch(e =>{
+            setFetch(false)
+            
+            
+            
          })
     },[props.url])
     useEffect(()=>{
@@ -24,8 +32,9 @@ const Category = (props)=>{
 
     const newData = category.map((el)=>el.fields)
     console.log(newData)
-    return (
-        <>
+    let el;
+    if(isFetched){
+        el =         <>
         <Navigation/>
         <div className= {`${cls['flex']}`}>
             <div className={`${cls['category-filter-size']} ${cls['margin-top']} ${cls['margin-left']}`}>
@@ -43,6 +52,13 @@ const Category = (props)=>{
         </div>
         <Footer/>
         </>
+    }
+    else{
+        el = <Errorr msg = {1}/>
+    }
+    return (
+        el
+
     )
 }
 export default Category
