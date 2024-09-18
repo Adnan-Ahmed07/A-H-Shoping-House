@@ -1,6 +1,6 @@
 .footer-size{
     
-    height:200px;
+    height:250px;
 }
 .footer-bg-color{
     background-color: rgba(4, 4, 52, 0.89);
@@ -25,7 +25,7 @@
     width: 100%;
     bottom: 0px;
 }
-.flex a{
+.flex-self-center{
     align-self: center;
 }
 .flex p{
@@ -35,4 +35,18 @@
 .margin-auto{
     margin-left: auto;
     margin-right: auto;
+}
+.flex-justify-between{
+    justify-content: space-between;
+}
+.font ul{
+    list-style-type: none;
+    color: rgb(133, 128, 128);
+}
+.font{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.margin-right{
+    padding-right:5%;
 }

@@ -17,7 +17,7 @@ const Category = (props)=>{
     })
     useEffect(()=>{
         fetchData();
-    },[])
+    },[fetchData])
     const changeValueHandler = (event)=>{
        setValue(event.target.value)
     }
