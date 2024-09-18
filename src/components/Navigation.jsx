@@ -2,6 +2,8 @@
 import { useState } from "react";
 import classess from "./navigation.module.css";
 import SearchBar from "./SearchBar.jsx";
+import { Link } from "react-router-dom";
+
 const Navigation = () => {
   const styl = `${classess["nav-bottom"]} ${classess.flex} ${classess["flex-center"]}`;
 
@@ -21,23 +23,27 @@ const Navigation = () => {
       <nav
         className={`${classess.flex} ${classess["nav-size"]} ${classess["flex-evenly"]} ${classess["nav-style"]} ${classess["box-position-absolute"]}`}
       >
-        <a href="http://localhost:5000">Home</a>
+        {/* <a href="http://localhost:5000">Home</a> */}
+        <Link to='/'>Home</Link>
         <div
           className={`${classess["flex"]} ${classess["flex-center"]} ${classess["nav-modal"]}`}>
-          <a
-            href="http://localhost:5000/category"
+          <Link
+            to="/category"
             className={`${classess["nav-category-modal"]}`}
           >
+           
             Category
-          </a>
+            </Link>
+         
 
           <div className={` ${classess["box-position"]} ${classess["hidden"]}`}>
             <ul>
               <li>
-                <a href="http://localhost:5000/men">Men</a>
+                <Link to="/men">Men</Link>
+
               </li>
               <li>
-                <a href="http://localhost:5000/women">Women</a>
+              <Link to="/women">Women</Link>
               </li>
             </ul>
           </div>

@@ -12,3 +12,6 @@ input{
 .Ad-sz{ 
   margin-right: 114px;
 }
+.cover{
+  object-fit: cover;
+}

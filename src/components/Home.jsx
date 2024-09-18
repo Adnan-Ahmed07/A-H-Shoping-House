@@ -22,19 +22,19 @@ const Home = ()=>{
             <Navigation/>
 
 
-            <Splide aria-lable = "my fav img" hasTrack = {false}>
-                {/* <div className='splide__toggle__play'>
-                </div> */}
-                <SplideTrack>
-            <SplideSlide>
-                <img src='https://github.com/Adnan-Ahmed07/Adnan-s/blob/main/project/images/2.jpg?raw=true' alt='image 1'/>
-            </SplideSlide>
-            <SplideSlide>
-                <img src='https://github.com/Adnan-Ahmed07/Adnan-s/blob/main/project/images/3.jpg?raw=true' alt='image 1'/>
-            </SplideSlide>
-            
-
-                </SplideTrack>
+    <Splide aria-lable = "my fav img" options={{type:'loop',autoplay:true,interval:2000}}>
+                <SplideSlide>
+                    <img src='https://th.bing.com/th/id/R.bbad446f66af6403bf23a98a8634459b?rik=WEPtEkLBmyrsiA&pid=ImgRaw&r=0' />
+                </SplideSlide>
+                <SplideSlide>
+                    <img src='https://wpbingosite.com/wordpress/kooto/wp-content/uploads/2023/01/slider-16.jpg' />
+                </SplideSlide>
+                <SplideSlide>
+                    <img src='https://wpbingosite.com/wordpress/kooto/wp-content/uploads/2023/01/slider-8.jpg' />
+                </SplideSlide>
+                <SplideSlide>
+                    <img src='https://wpbingosite.com/wordpress/kooto/wp-content/uploads/2023/01/slider-7.jpg'/>
+                </SplideSlide>
             </Splide>
             <Preview category = {men}/>
             <Preview category = {women}/>
